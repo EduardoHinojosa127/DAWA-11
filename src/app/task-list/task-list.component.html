@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let task of tasks">
+      <input type="checkbox" [(ngModel)]="task.completed">
+      <label [ngClass]="{'completed': task.completed}">
+        {{ task.description }}
+      </label>
+      <span *ngIf="task.completed">(Completada)</span>
+      <span *ngIf="!task.completed">(No completada)</span>
+    </li>
+  </ul>
+  
