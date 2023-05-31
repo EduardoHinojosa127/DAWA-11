@@ -1,3 +1,5 @@
-<app-add-task (taskAdded)="addTask($event)"></app-add-task>
-<app-task-filter (filterChanged)="applyFilter($event)"></app-task-filter>
-<app-task-list [tasks]="filteredTasks"></app-task-list>
+<div class="container mt-3">
+  <app-add-task (taskAdded)="addTask($event)"></app-add-task>
+  <app-task-filter (filterChanged)="applyFilter($event)"></app-task-filter>
+  <app-task-list [tasks]="filteredTasks"></app-task-list>
+</div>
